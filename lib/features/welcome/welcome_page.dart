@@ -1,4 +1,5 @@
 import 'package:cherry_mvp/core/reusablewidgets/primary_button.dart';
+import 'package:cherry_mvp/core/reusablewidgets/social_login_button.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:cherry_mvp/core/router/router.dart';
@@ -17,7 +18,7 @@ class WelcomePage extends StatelessWidget {
           // Background Image
           Positioned.fill(
             child: Image.asset(
-            AppImages.welcomeBg,
+              AppImages.welcomeBg,
               fit: BoxFit.cover,
             ),
           ),
@@ -55,7 +56,9 @@ class WelcomePage extends StatelessWidget {
                   ),
                 ),
 
-                const SizedBox(height: 30),
+                const SizedBox(
+                  height: 30,
+                ),
 
                 // Register Button
                 GestureDetector(

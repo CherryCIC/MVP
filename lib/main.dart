@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
           navigatorKey: navigatorService.navigatorKey,
           onGenerateRoute: AppRoutes.generateRoute,
           theme: ThemeData(fontFamily: 'Raleway'),
-          home: HomePage(),
+          home: WelcomePage(),
         );
       },
     );
